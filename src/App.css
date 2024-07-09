@@ -1,6 +1,10 @@
 /* .App {
 } */
 
+.fp-watermark {
+  display: none;
+  }
+
 .background {
   position: absolute;
   top: 0;
@@ -51,6 +55,12 @@
   position: fixed;
   left:85vw;
   top:55vh;
+}
+
+.background .miniminiflower {
+  position: fixed;
+  left:30vw;
+  top:10vh;
 }
 
 
@@ -204,7 +214,7 @@
 }
 
 .menu{
-  margin-top: 2vh;
+  margin-top: 0.5vh;
   color:#E071A7;
 }
 
