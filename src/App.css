@@ -1,38 +1,290 @@
-.App {
-  text-align: center;
+/* .App {
+} */
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: -1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contents {
+  /* position: relative; Background 위에 올라오도록 설정 */
+  z-index: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.profile{
+  width: 20vw;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  position: fixed;
+  top: 15vh;
+  right: 5vw;
+  z-index: 10;
 }
 
-.App-link {
-  color: #61dafb;
+.section {
+  margin-left: 12vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.background .vector {
+  left: 0;
+  position: fixed;
+  width: 100vw;
+}
+
+.background .vector:first-child {
+  top: 10vh;
+}
+
+.background .vector:last-child {
+  top: 65vh;
+}
+
+.background .miniflower {
+  position: fixed;
+  left:85vw;
+  top:55vh;
+}
+
+
+
+.profile .name {
+  font-size: 8vh;
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 8%;
+}
+
+.profile .flowerimg {
+  width: 30vh; /* profile div의 80% 너비 */
+  height: auto; /* 이미지의 비율을 유지하면서 너비에 맞춰 높이 조절 */
+}
+
+.profile .intro{
+  display: flex; /* Flexbox 레이아웃 사용 */
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile .intro p a:hover{
+  color:#E071A7;
+}
+
+.profile .intro .name {
+  font-size: 3vh;
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-style: normal;
+
+  margin-bottom: 1vh;
+}
+
+.profile .intro .email{
+  font-size: 2vh;
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+
+  margin-top:0.5vh;
+  margin-bottom:1vh;
+}
+
+.profile .intro .link{
+  font-size: 2.1vh;
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+
+  margin-top:0.6vh;
+  margin-bottom:0vh;
+}
+
+.profile .intro .link-cv{
+  font-size: 2.5vh;
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-style: normal;
+
+  margin-top:1.3vh;
+  margin-bottom:0vh;
+}
+
+.profile .intro p a{
+  color: inherit;
+  text-decoration: none;
+}
+
+.contents-desc .name-tag p:first-child{
+  font-size: 9vh;
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-style: italic;
+  margin: 0vh;
+}
+
+.contents-desc .name-tag p:last-child{
+  font-size: 2.5vh;
+  font-family: "Crimson Text", serif;
+  font-weight: 500;
+  font-style: italic;
+  margin-top: 0vh;
+}
+
+.contents-desc .name-tag{
+  margin-bottom: 5vh;
+  padding-right: 35vw;
+}
+
+.contents-desc .introdesc p{
+  padding-right: 35vw;
+}
+
+.contents-desc .subresearch{
+  margin-bottom: 10vh;
+}
+
+.contents-desc .research-title{
+  font-size: 6vh;
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-style: italic;
+
+  margin: 0vh;
+  margin-top: 15vh;
+}
+
+.contents-desc .subtitle{
+  font-size: 3vh;
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: italic;
+  /* margin: 0vh; */
+}
+
+.research-container{
+  display: flex;
+  align-items: center;
+  gap:3vw;
+  margin-bottom: 5vh;
+}
+
+.research-container img{
+  width:30vh;
+  border: 1px solid #FFC9E3;
+}
+
+.research-container .desc{
+  padding-right:35vw;
+}
+
+.research-container .desc p{
+  margin-top:0vh;
+  margin-bottom: 0.5vh;
+}
+
+.research-container .desc p:first-child{
+  font-size: 2vh;
+}
+
+.research-container .desc p:nth-child(2){
+  font-size:2.5vh;
+  font-weight: 700;
+}
+
+.research-container .desc p:nth-child(3){
+  font-size:2.2vh;
+}
+
+.menu{
+  margin-top: 2vh;
+  color:#E071A7;
+}
+
+.menu span{
+  font-size: 2vh;
+  font-family: "Crimson Text", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.menu {
+  align-items: flex-start;
+  display: inline-flex;
+  gap: 1.5vw;
+  position: relative;
+}
+
+.menu a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu a:hover{
+  color: #CCB2BF;
+}
+
+.contents-desc p{
+  font-size: 2.5vh;
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.contents-desc p .exp-bold{
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.contents-desc p .exp-italic{
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.contents-desc p .exp-boltalic{
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.contents-desc p .exp-under{
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: underline;
+}
+
+.contents-desc p a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contents-desc p a:hover{
+  color:#E071A7;
+}
+
+.menu .menu-wrapper {
+  color: #191919;
+  font-size: 3vh;
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.vertical {
+  text-align: center;
+  margin: 2vh;
 }
