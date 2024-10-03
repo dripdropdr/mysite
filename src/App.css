@@ -1,5 +1,6 @@
-/* .App {
-} */
+.App {
+  color:#252324
+}
 
 .fp-watermark {
   display: none;
@@ -26,8 +27,8 @@
   align-items: center;
 
   position: fixed;
-  top: 15vh;
-  right: 5vw;
+  top: 20vh;
+  left: 3vw;
   z-index: 10;
 }
 
@@ -51,7 +52,12 @@
   top: 65vh;
 }
 
-.background .miniflower {
+.background .miniflower, .background .miniminiflower {
+  position: fixed;
+  transition: transform 0.5s ease-in-out; /* Smooth transition for position change */
+}
+
+/* .background .miniflower {
   position: fixed;
   left:85vw;
   top:55vh;
@@ -61,7 +67,7 @@
   position: fixed;
   left:30vw;
   top:10vh;
-}
+} */
 
 
 
@@ -74,7 +80,7 @@
 }
 
 .profile .flowerimg {
-  width: 30vh; /* profile div의 80% 너비 */
+  width: 18vw; /* profile div의 80% 너비 */
   height: auto; /* 이미지의 비율을 유지하면서 너비에 맞춰 높이 조절 */
 }
 
@@ -85,11 +91,12 @@
 }
 
 .profile .intro p a:hover{
+  animation: blink-pink 0.5s ease forwards; /* 애니메이션 적용 */
   color:#E071A7;
 }
 
 .profile .intro .name {
-  font-size: 3vh;
+  font-size: 2vw;
   font-family: "Crimson Text", serif;
   font-weight: 700;
   font-style: normal;
@@ -98,33 +105,44 @@
 }
 
 .profile .intro .email{
-  font-size: 2vh;
+  font-size: 1vw;
   font-family: "Crimson Text", serif;
   font-weight: 400;
   font-style: normal;
 
-  margin-top:0.5vh;
+  margin-top:1vh;
   margin-bottom:1vh;
 }
 
 .profile .intro .link{
-  font-size: 2.1vh;
+  font-size: 1.5vw;
   font-family: "Crimson Text", serif;
   font-weight: 400;
   font-style: normal;
 
   margin-top:0.6vh;
-  margin-bottom:0vh;
+  margin-bottom:1vh;
 }
 
 .profile .intro .link-cv{
-  font-size: 2.5vh;
+  font-size: 1.5vw;
   font-family: "Crimson Text", serif;
   font-weight: 600;
   font-style: normal;
 
-  margin-top:1.3vh;
+  margin-top:1vh;
   margin-bottom:0vh;
+}
+
+.profile .intro .lastupdated{
+  font-size: 0.8vw;
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  color:#a2a2a2;
+
+  margin-top:2.5vh;
+  margin-bottom:1vh;
 }
 
 .profile .intro p a{
@@ -132,68 +150,23 @@
   text-decoration: none;
 }
 
-.contents-desc .name-tag p:first-child{
-  font-size: 9vh;
-  font-family: "Crimson Text", serif;
-  font-weight: 700;
-  font-style: italic;
-  margin: 0vh;
-}
-
-.contents-desc .name-tag p:last-child{
-  font-size: 2.5vh;
-  font-family: "Crimson Text", serif;
-  font-weight: 500;
-  font-style: italic;
-  margin-top: 0vh;
-}
-
-.contents-desc .name-tag{
-  margin-bottom: 5vh;
-  padding-right: 35vw;
-}
-
-.contents-desc .introdesc p{
-  padding-right: 35vw;
-}
-
-.contents-desc .subresearch{
-  margin-bottom: 10vh;
-}
-
-.contents-desc .research-title{
-  font-size: 6vh;
-  font-family: "Crimson Text", serif;
-  font-weight: 700;
-  font-style: italic;
-
-  margin: 0vh;
-  margin-top: 15vh;
-}
-
-.contents-desc .subtitle{
-  font-size: 3vh;
-  font-family: "Crimson Text", serif;
-  font-weight: 400;
-  font-style: italic;
-  /* margin: 0vh; */
-}
 
 .research-container{
   display: flex;
   align-items: center;
   gap:3vw;
   margin-bottom: 5vh;
+  padding-left: 0.5vw;
 }
 
 .research-container img{
-  width:30vh;
+  width:26vh;
   border: 1px solid #FFC9E3;
 }
 
-.research-container .desc{
-  padding-right:35vw;
-}
+/* .research-container .desc{
+  padding-left:14vw;
+} */
 
 .research-container .desc p{
   margin-top:0vh;
@@ -201,35 +174,33 @@
 }
 
 .research-container .desc p:first-child{
-  font-size: 2vh;
+  font-size: 1vw;
+  font-family: "Crimson Text", serif;
 }
 
 .research-container .desc p:nth-child(2){
-  font-size:2.5vh;
+  font-size:1.2vw;
   font-weight: 700;
 }
 
 .research-container .desc p:nth-child(3){
-  font-size:2.2vh;
-}
-
-.menu{
-  margin-top: 0.5vh;
-  color:#E071A7;
-}
-
-.menu span{
-  font-size: 2vh;
-  font-family: "Crimson Text", serif;
-  font-weight: 500;
-  font-style: normal;
+  font-size:1vw;
 }
 
 .menu {
   align-items: flex-start;
   display: inline-flex;
-  gap: 1.5vw;
+  gap: 1vw;
   position: relative;
+  margin-top: 0.5vh;
+  color:#E071A7;
+}
+
+.menu span{
+  font-size: 0.8vw;
+  font-family: "Crimson Pro", serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .menu a{
@@ -239,18 +210,105 @@
 
 .menu a:hover{
   color: #CCB2BF;
+  animation: blink-lightpink 0.5s ease forwards;
+}
+
+
+.contents-desc{
+  padding-left: 14vw;
+  padding-right: 23vw;
 }
 
 .contents-desc p{
-  font-size: 2.5vh;
-  font-family: "Crimson Text", serif;
+  font-size: 2.4vh;
+  font-family: "Crimson Pro", serif;
   font-weight: 400;
   font-style: normal;
 }
+
+.contents-desc .name-tag{
+  margin-bottom: 5vh;
+  
+}
+
+.contents-desc .introdesc p{
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+
+  /* additional padding */
+  padding-right: 13vw;
+}
+
+
+.contents-desc .name-tag p:first-child{
+  font-size: 4vw;
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-style: italic;
+  margin: 0vh;
+}
+
+.contents-desc .name-tag p:last-child{
+  font-size: 1.5vw;
+  font-family: "Crimson Text", serif;
+  font-weight: 500;
+  font-style: italic;
+  margin-top: 0vh;
+}
+
+.contents-desc .subresearch{
+  margin-bottom: 10vh;
+}
+
+.contents-desc .research-title{
+  font-size: 3vw;
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-style: italic;
+
+  margin: 0vh;
+  margin-top: 15vh;
+}
+
+.contents-desc .subtitle{
+  font-size: 1.3vw;
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: italic;
+  /* margin: 0vh; */
+}
+
+.contents-desc button{
+  border: none;
+  outline: none;
+  background-color: inherit ;
+  cursor: pointer;
+
+  /* font-size: 2.2vh; */
+}
+
+.contents-desc .introdesc .publication {
+  font-size: 1.4vw;
+  font-family: "Crimson Pro", serif;
+  font-weight: 700;
+  font-style: normal;
+
+  padding: 0;
+
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
 .contents-desc p .exp-bold{
   font-family: "Crimson Text", serif;
   font-weight: 700;
   font-style: normal;
+}
+
+.contents-desc p .exp-semibold{
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-style: normal;
+  
 }
 
 .contents-desc p .exp-italic{
@@ -262,6 +320,12 @@
 .contents-desc p .exp-boltalic{
   font-family: "Crimson Text", serif;
   font-weight: 700;
+  font-style: italic;
+}
+
+.contents-desc p .exp-semiboltalic{
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
   font-style: italic;
 }
 
@@ -279,12 +343,19 @@
 
 .contents-desc p a:hover{
   color:#E071A7;
+  /* transition: color 0.3s ease; 기본 색 전환 효과 */
+  animation: blink-pink 0.5s ease forwards; /* 애니메이션 적용 */
 }
 
-.menu .menu-wrapper {
+.contents-desc p button:hover{
+  color:#E071A7;
+  /* transition: color 0.3s ease; 기본 색 전환 효과 */
+  animation: blink-pink 0.5s ease forwards; /* 애니메이션 적용 */
+}
+
+/* .menu .menu-wrapper {
   color: #191919;
-  font-size: 3vh;
-  font-family: "Crimson Text", serif;
+  font-family: "Crimson Pro", serif;
   font-weight: 700;
   font-style: normal;
   letter-spacing: 0;
@@ -297,4 +368,30 @@
 .vertical {
   text-align: center;
   margin: 2vh;
+} */
+
+
+/* 깜빡임 애니메이션 정의 */
+@keyframes blink-pink {
+  0% {
+    color: black; /* 시작 시 검정색 */
+  }
+  50% {
+    color: #e071a7ce; /* 중간에 분홍색 */
+  }
+  100% {
+    color: #E071A7; /* 최종적으로 분홍색 */
+  }
+}
+
+@keyframes blink-lightpink {
+  0% {
+    color: #E071A7; /* 시작 시 검정색 */
+  }
+  50% {
+    color: #CCB2BF;; /* 중간에 분홍색 */
+  }
+  100% {
+    color: #CCB2BF; /* 최종적으로 분홍색 */
+  }
 }
