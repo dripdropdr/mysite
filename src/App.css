@@ -353,22 +353,278 @@
   animation: blink-pink 0.5s ease forwards; /* 애니메이션 적용 */
 }
 
-/* .menu .menu-wrapper {
-  color: #191919;
-  font-family: "Crimson Pro", serif;
-  font-weight: 700;
-  font-style: normal;
-  letter-spacing: 0;
-  line-height: normal;
-  margin-top: -1px;
-  position: relative;
-  width: fit-content;
-}
 
-.vertical {
-  text-align: center;
-  margin: 2vh;
-} */
+@media (max-width: 768px) {
+
+  .section {
+    margin-left: 5vw;
+  }
+  
+  
+  .background .vector {
+    left: 0;
+    position: fixed;
+    width: 100vw;
+  }
+  
+  .background .vector:first-child {
+    top: 10vh;
+  }
+  
+  .background .vector:last-child {
+    top: 65vh;
+  }
+  
+  .background .miniflower, .background .miniminiflower {
+    position: fixed;
+    transition: transform 0.5s ease-in-out; /* Smooth transition for position change */
+  }
+
+  .contents-desc{
+    padding-left: 1vw;
+    padding-right: 3vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+  }
+
+  .mobile-profile{
+    display: flex;
+    gap: 5vw;
+    align-items: center;
+  }
+  
+  .contents-desc p{
+    font-size: 4.2vw;
+    font-family: "Crimson Pro", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .contents-desc .description{
+    padding-left: 1vw;
+    padding-right: 4vw;
+  }
+
+  .mobile-profile .intro .name{
+    font-size: 9.5vw;
+    font-family: "Crimson Text", serif;
+    font-weight: 700;
+    font-style: italic;
+
+    margin-top: 1vh;
+    margin-bottom: 0vh;
+  }
+  
+  .mobile-profile .intro .position{
+    font-size: 3vw;
+    font-family: "Crimson Text", serif;
+    font-weight: 500;
+    font-style: italic;
+
+    margin-top: 0vh;
+    margin-bottom: 2vh;
+  }
+    
+  .mobile-profile .flowerimg {
+    width: 35vw; /* profile div의 80% 너비 */
+    height: auto; /* 이미지의 비율을 유지하면서 너비에 맞춰 높이 조절 */
+  }
+  
+  .mobile-profile .intro .email{
+    font-size: 1vw;
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+  
+    margin-top:1vh;
+    margin-bottom:1vh;
+  }
+  
+  .mobile-profile .intro .link{
+    font-size: 4vw;
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+  
+    margin-top:0.5vh;
+    margin-bottom:0.5vh;
+  }
+  
+  .mobile-profile .intro .link-cv{
+    font-size: 4vw;
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+    font-style: normal;
+  
+    margin-top:1vh;
+    margin-bottom:0vh;
+  }
+
+  .mobile-profile .intro p a{
+    color: inherit;
+    text-decoration: none;
+  }
+  .mobile-profile .intro p a:hover{
+    animation: blink-pink 0.5s ease forwards; /* 애니메이션 적용 */
+    color:#E071A7;
+  }
+
+  .contents-desc .publication p button{
+    font-size: 4vw;
+    font-family: "Crimson Pro", serif;
+    font-weight: 700;
+    font-style: normal;
+  
+    padding: 0;
+  
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+
+  
+  .research-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:1vh;
+    margin-bottom: 5vh;
+    padding-left: 1vw;
+    padding-right: 5vw;
+  }
+  
+  .research-container img{
+    width: 80vw;
+    border: 1px solid #FFC9E3;
+  }
+  
+  .research-container .desc{
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+
+  .research-container .desc p{
+    margin-top:0vh;
+    margin-bottom: 0.5vh;
+  }
+  
+  .research-container .desc p:first-child{
+    font-size: 2.5vw;
+    font-family: "Crimson Text", serif;
+    text-align: center;
+  }
+  
+  .research-container .desc p:nth-child(2){
+    font-size: 3.5vw;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .research-container .desc p:nth-child(3){
+    font-size: 3vw;
+    text-align: center;
+  }
+    
+  .supple{
+    font-size: 2.5vw;
+    font-family: "Crimson Pro", serif;
+    font-weight: 500;
+    font-style: normal;
+    color:#E071A7;
+  }
+  
+  .supple:hover{
+    color: #CCB2BF;
+    animation: blink-lightpink 0.5s ease forwards;
+  }
+
+
+  .contents-desc .research-title{
+    font-size: 5vw;
+    font-family: "Crimson Text", serif;
+    font-weight: 700;
+    font-style: italic;
+  
+    margin: 0vh;
+    margin-top: 3vh;
+  }
+  
+  .contents-desc .subtitle{
+    font-size: 2.9vw;
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 0vh;
+  }
+
+  .contents-desc .subresearch{
+    margin-bottom: 0vh;
+  }
+  
+  .contents-desc button{
+    border: none;
+    outline: none;
+    background-color: inherit ;
+    cursor: pointer;
+  
+    /* font-size: 2.2vh; */
+  }
+  
+  .contents-desc p .exp-bold{
+    font-family: "Crimson Text", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .contents-desc p .exp-semibold{
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+    font-style: normal;
+    
+  }
+  
+  .contents-desc p .exp-italic{
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .contents-desc p .exp-boltalic{
+    font-family: "Crimson Text", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .contents-desc p .exp-semiboltalic{
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .contents-desc p .exp-under{
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: underline;
+  }
+  
+  .contents-desc p a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .contents-desc p a:hover{
+    color:#E071A7;
+    /* transition: color 0.3s ease; 기본 색 전환 효과 */
+    animation: blink-pink 0.5s ease forwards; /* 애니메이션 적용 */
+  }
+  
+  .contents-desc p button:hover{
+    color:#E071A7;
+    /* transition: color 0.3s ease; 기본 색 전환 효과 */
+    animation: blink-pink 0.5s ease forwards; /* 애니메이션 적용 */
+  }
+}
 
 
 /* 깜빡임 애니메이션 정의 */
