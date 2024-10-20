@@ -108,9 +108,10 @@ export const Desc = ({fullpageApi}) => {
         
           <div className='description'>
             <p>Hello! 🙌</p>
-            <p>I am Sumin, first-year Ph.D. student in <a href='https://cse.nd.edu/' target='_blank'><span className='exp-semibold'>Computer Science and Engineering @University of Notre Dame</span></a>.
+            <p>I am Sumin, interested with intuitive <span className='exp-semibold'>interaction/representation</span> with <span className='exp-semibold'>creativity</span> and <span className='exp-semibold'>multi-modality fusion</span> in the context of the <span className='exp-semiboltalic'>Human-AI Interaction</span>.</p>
+            <p>I am a first-year Ph.D. student in <a href='https://cse.nd.edu/' target='_blank'><span className='exp-semibold'>Computer Science and Engineering @University of Notre Dame</span></a>.
             I work with <a href='https://toby.li/'><span className='exp-semiboltalic'>Prof. Toby Jia-Jun Li</span>. </a> 
-            My interests lie in intuitive interaction techniques with <span className='exp-semibold'>multi-modality fusion</span> in the context of the <span className='exp-semiboltalic'>Human-AI Interaction</span>.
+            {/* My interests lie in intuitive interaction techniques with <span className='exp-semibold'>multi-modality fusion</span> in the context of the <span className='exp-semiboltalic'>Human-AI Interaction</span>. */}
             <br/></p> 
           </div>
 
@@ -127,9 +128,11 @@ export const Desc = ({fullpageApi}) => {
       </div>
       <div className='introdesc'>
         <p>Hello! 🙌</p>
-        <p>I am Sumin, first-year Ph.D. student in <a href='https://cse.nd.edu/' target='_blank'><span className='exp-semibold'>Computer Science and Engineering @University of Notre Dame</span></a>.
+        <p>I am Sumin, interested with intuitive <span className='exp-semibold'>interaction/representation</span> with <span className='exp-semibold'>creativity</span> and <span className='exp-semibold'>multi-modality fusion</span> in the context of the <span className='exp-semiboltalic'>Human-AI Interaction</span>.</p>
+        <p>I am a first-year Ph.D. student in <a href='https://cse.nd.edu/' target='_blank'><span className='exp-semibold'>Computer Science and Engineering @University of Notre Dame</span></a>.
          I work with <a href='https://toby.li/'><span className='exp-semiboltalic'>Prof. Toby Jia-Jun Li</span>. </a> 
-         My interests lie in intuitive interaction techniques with <span className='exp-semibold'>multi-modality fusion</span> in the context of the <span className='exp-semiboltalic'>Human-AI Interaction</span>.</p> 
+         {/* My interests lie in intuitive interaction techniques with <span className='exp-semibold'>multi-modality fusion</span> in the context of the <span className='exp-semiboltalic'>Human-AI Interaction</span>. */}
+         </p> 
         {/* <br/> */}
         {/* <p>I like playing soccer ⚽️, enjoying the art & music 🎶, and drinks...🥂 <br/> These are my <a href='https://www.instagram.com/dripdropdr'>Instagram</a> and <a href='https://www.youtube.com/channel/UCacXdIyd3o-hKJ74mosgQhw'>Youtube</a>!</p> */}
         {/* <p>Please feel free to<button onClick={copyToClipboard} style={{cursor:"pointer", fontFamily:"inherit", fontSize:"inherit"}}>email</button>me if you'd like to chat with!</p> */}
@@ -148,7 +151,7 @@ export const Research = () => {
       <p className='research-title'>Publications</p>
 
       <div className='subresearch'>
-        <p className='subtitle'>Human-Computer Interaction</p>
+        {/* <p className='subtitle'>Human-Computer Interaction</p> */}
 
         <div className='research-container'>
           <div className='image'>
@@ -164,7 +167,57 @@ export const Research = () => {
             </p>
             <p>DaEun Choi, <span className='exp-bold'>Sumin Hong</span>, Jeongeon Park, John Joon Young Jung, and Juho Kim
             </p>
+            <div className='menu'>
+              <img src='screen/hci.png'></img>
+              <a href='screen/chi2024.pdf'><img src='screen/paper.png'></img></a>
+              <a href='https://creativeconnect.kixlab.org/'><img src='screen/website.png'></img></a>
+            </div>
 
+          </div>
+        </div>
+        
+        <div className='research-container'>
+          <div className='image'>
+            <img src='screen/icassp2024.png'/>
+          </div>
+          <div className='desc'>
+            <p>ICASSP 2024</p>
+            <p><a href='https://doi.org/10.1109/ICASSP48485.2024.10446428' target='_blank'>Class-wise Buffer Management for Incremental Object Detection: an Effective Buffer Training Strategy</a></p>
+            <p>Junsu Kim, <span className='exp-bold'>Sumin Hong</span>, Chanwoo Kim, Jihyeon Kim, Yihalem Yimolal Tiruneh, Jeongwan On, Jihyun Song, Sunhwa Choi, and Seungryul Baek</p>
+            <div className='menu'>
+              <img src='screen/ml.png'></img>
+              <a href='screen/icassp2024.pdf'><img src='screen/paper.png'></img></a>
+            </div>
+          </div>
+        </div>
+
+        <div className='research-container'>
+          <div className='image'>
+            <img src='screen/csse.png'/>
+          </div>
+          <div className='desc'>
+            <p>Computer Systems Science and Engineering, 47(2), 1611-1632, 2023</p>
+            <p><a href='https://doi.org/10.32604/csse.2023.038319' target='_blank'>Automatic Examination of Condition of Used Books with YOLO-based Object Detection Framework</a></p>
+            <p><span className='exp-bold'>Sumin Hong</span> and Jin-woo Jeong</p>
+            <div className='menu'>
+              <img src='screen/ml.png'></img>
+              <a href='screen/csse.pdf'><img src='screen/paper.png'></img></a>
+            </div>
+          </div>
+        </div>
+
+        <div className='research-container'>
+          <div className='image'>
+            <img src='screen/eccv2023.png'/>
+          </div>
+          <div className='desc'>
+            <p>ECCV 2023 Workshop on Affective Behavior Analysis in-the-Wild</p>
+            <p><a href='https://doi.org/10.1007/978-3-031-25075-0_5' target='_blank'>Ensemble of Multi-task Learning Networks for Facial Expression Recognition In-the-Wild with Learning from Synthetic Data</a></p>
+            <p>Jae-yeop Jeong<sup>1</sup>, Young-gi Hong<sup>1</sup>, <span className='exp-bold'>Sumin Hong<sup>1</sup></span>, Jiyeon Oh<sup>1</sup>, Yuchul Jung, Sang-Ho Kim and Jin-woo Jeong</p>
+            <div className='menu'>
+              <img src='screen/ml.png'></img>
+              <a href='screen/eccv2023.pdf'><img src='screen/paper.png'></img></a>
+            </div>
           </div>
         </div>
 
@@ -178,54 +231,13 @@ export const Research = () => {
               {/* <span className='supple'><a href='screen/etra2022.pdf' target='_blank'>paper</a></span> */}
             </p>
             <p>Daun Kim<sup>1</sup>, Jae-yeop Jeong<sup>1</sup>, <span className='exp-bold'>Sumin Hong</span>, Namsub Kim, and Jin-woo Jeong</p>
+            <div className='menu'>
+              <img src='screen/hci.png'></img>
+              <a href='screen/etra2022.pdf'><img src='screen/paper.png'></img></a>
+            </div>
           </div>
         </div>
 
-      </div>
-      
-      <div className='subresearch'>
-      <p className='subtitle'>Applied Machine Learning</p>
-        <div className='research-container'>
-          <div className='image'>
-            <img src='screen/icassp2024.png'/>
-          </div>
-          <div className='desc'>
-            <p>ICASSP 2024</p>
-            <p><a href='https://doi.org/10.1109/ICASSP48485.2024.10446428' target='_blank'>Class-wise Buffer Management for Incremental Object Detection: an Effective Buffer Training Strategy</a></p>
-            <p>Junsu Kim, <span className='exp-bold'>Sumin Hong</span>, Chanwoo Kim, Jihyeon Kim, Yihalem Yimolal Tiruneh, Jeongwan On, Jihyun Song, Sunhwa Choi, and Seungryul Baek</p>
-            {/* <div className='menu'>
-              <a href='screen/icassp2024.pdf' target='_blank'><span>paper</span></a>
-            </div> */}
-          </div>
-        </div>
-
-        <div className='research-container'>
-          <div className='image'>
-            <img src='screen/csse.png'/>
-          </div>
-          <div className='desc'>
-            <p>Computer Systems Science and Engineering, 47(2), 1611-1632, 2023</p>
-            <p><a href='https://doi.org/10.32604/csse.2023.038319' target='_blank'>Automatic Examination of Condition of Used Books with YOLO-based Object Detection Framework</a></p>
-            <p><span className='exp-bold'>Sumin Hong</span> and Jin-woo Jeong</p>
-            {/* <div className='menu'>
-              <a href='screen/csse.pdf' target='_blank'><span>paper</span></a>
-            </div> */}
-          </div>
-        </div>
-
-        <div className='research-container'>
-          <div className='image'>
-            <img src='screen/eccv2023.png'/>
-          </div>
-          <div className='desc'>
-            <p>ECCV 2023 Workshop on Affective Behavior Analysis in-the-Wild</p>
-            <p><a href='https://doi.org/10.1007/978-3-031-25075-0_5' target='_blank'>Ensemble of Multi-task Learning Networks for Facial Expression Recognition In-the-Wild with Learning from Synthetic Data</a></p>
-            <p>Jae-yeop Jeong<sup>1</sup>, Young-gi Hong<sup>1</sup>, <span className='exp-bold'>Sumin Hong<sup>1</sup></span>, Jiyeon Oh<sup>1</sup>, Yuchul Jung, Sang-Ho Kim and Jin-woo Jeong</p>
-            {/* <div className='menu'>
-              <a href='screen/eccv2023.pdf' target='_blank'><span>paper</span></a>
-            </div> */}
-          </div>
-        </div>
       </div>
     </div>
   )

@@ -1,5 +1,6 @@
 .App {
-  color:#252324
+  color:#2f2c2e;
+  /* background-color: #fbfbfb; */
 }
 
 .fp-watermark {
@@ -16,7 +17,6 @@
 
 .contents {
   /* position: relative; Background 위에 올라오도록 설정 */
-  z-index: 1;
 }
 
 .profile{
@@ -115,7 +115,7 @@
 }
 
 .profile .intro .link{
-  font-size: 1.5vw;
+  font-size: 1.4vw;
   font-family: "Crimson Text", serif;
   font-weight: 400;
   font-style: normal;
@@ -125,18 +125,18 @@
 }
 
 .profile .intro .link-cv{
-  font-size: 1.5vw;
+  font-size: 1.4vw;
   font-family: "Crimson Text", serif;
   font-weight: 600;
   font-style: normal;
 
-  margin-top:1vh;
+  margin-top:0.5vh;
   margin-bottom:0vh;
 }
 
 .profile .intro .lastupdated{
-  font-size: 0.8vw;
-  font-family: "Crimson Text", serif;
+  font-size: 0.7vw;
+  font-family: "Albert Sans";
   font-weight: 400;
   font-style: normal;
   color:#a2a2a2;
@@ -157,11 +157,13 @@
   gap:3vw;
   margin-bottom: 5vh;
   padding-left: 0.5vw;
+  font-family: "Crimson Pro", serif;
 }
 
 .research-container img{
   width:26vh;
-  border: 1px solid #FFC9E3;
+  /* border: 1px solid #FFC9E3; */
+  /* border-radius: 7% 7% 7% 7% ; */
 }
 
 /* .research-container .desc{
@@ -174,26 +176,43 @@
 }
 
 .research-container .desc p:first-child{
-  font-size: 1vw;
-  font-family: "Crimson Text", serif;
+  font-size: 0.8vw;
+  /* font-style: italic; */
+  /* font-family: "Albert Sans"; */
+  /* letter-spacing: -0.05vw; */
+  font-family: "Crimson Text";
+  font-weight: 400;
+  color: #6c6c6c;
 }
 
 .research-container .desc p:nth-child(2){
   font-size:1.2vw;
   font-weight: 700;
+  letter-spacing: 0vw;
+  color: #353535;
+  /* font-family: "Albert Sans"; */
+  font-family: "Crimson Text";
 }
 
 .research-container .desc p:nth-child(3){
-  font-size:1vw;
+  font-size:0.85vw;
+  color: #484848;
+  font-family: "Crimson Pro";
+  /* font-family: "Albert Sans"; */
 }
 
 .menu {
   align-items: flex-start;
   display: inline-flex;
-  gap: 1vw;
+  gap: 0.5vw;
   position: relative;
   margin-top: 0.5vh;
   color:#E071A7;
+}
+
+.menu img {
+  height:1.2vw;
+  width:auto;
 }
 
 .menu span{
@@ -227,13 +246,13 @@
 }
 
 .contents-desc .name-tag{
-  margin-bottom: 5vh;
-  
+  margin-bottom: 5vh;  
 }
 
 .contents-desc .introdesc p{
   margin-top: 1vh;
   margin-bottom: 1vh;
+  color: #353535;
 
   /* additional padding */
   padding-right: 13vw;
@@ -262,19 +281,21 @@
 
 .contents-desc .research-title{
   font-size: 3vw;
-  font-family: "Crimson Text", serif;
+  font-family: "Crimson Pro", serif;
   font-weight: 700;
   font-style: italic;
 
   margin: 0vh;
   margin-top: 15vh;
+  margin-bottom: 5vh;
 }
 
 .contents-desc .subtitle{
-  font-size: 1.3vw;
-  font-family: "Crimson Text", serif;
+  font-size: 1.1vw;
+  font-family: "Crimson Pro", serif;
   font-weight: 400;
-  font-style: italic;
+  color: #FFC9E3;
+  /* font-style: italic; */
   /* margin: 0vh; */
 }
 
@@ -292,6 +313,7 @@
   font-family: "Crimson Pro", serif;
   font-weight: 700;
   font-style: normal;
+  color: #353535;
 
   padding: 0;
 
